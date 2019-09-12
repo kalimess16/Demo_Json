@@ -1,33 +1,63 @@
 package com.example.jsondemo.Object;
 
-public class Personal {
-    private String mName;
-    private int mAge;
-    private String mGender,mAddress;
+import java.util.Arrays;
 
-    public Personal(String name, int age, String gender, String address) {
+public class Personal {
+    private int[] mId;
+    private String[] mName;
+    private int[] mAge;
+    private String mGender;
+    private Address mAddress;
+
+    public Personal() {
+    }
+
+    public Personal(int[] id, String[] name, int[] age, String gender, Address address) {
+        mId = id;
         mName = name;
         mAge = age;
         mGender = gender;
         mAddress = address;
     }
 
-    public Personal() {
+    @Override
+    public String toString() {
+        return "Personal{"
+                + "mId="
+                + Arrays.toString(mId)
+                + ", mName="
+                + Arrays.toString(mName)
+                + ", mAge="
+                + Arrays.toString(mAge)
+                + ", mGender='"
+                + mGender
+                + '\''
+                + ", mAddress="
+                + mAddress
+                + '}';
     }
 
-    public String getName() {
+    public int[] getId() {
+        return mId;
+    }
+
+    public void setId(int[] id) {
+        mId = id;
+    }
+
+    public String[] getName() {
         return mName;
     }
 
-    public void setName(String name) {
+    public void setName(String[] name) {
         mName = name;
     }
 
-    public int getAge() {
+    public int[] getAge() {
         return mAge;
     }
 
-    public void setAge(int age) {
+    public void setAge(int[] age) {
         mAge = age;
     }
 
@@ -39,28 +69,11 @@ public class Personal {
         mGender = gender;
     }
 
-    public String getAddress() {
+    public Address getAddress() {
         return mAddress;
     }
 
-    public void setAddress(String address) {
+    public void setAddress(Address address) {
         mAddress = address;
-    }
-
-    @Override
-    public String toString() {
-        return "Personal{"
-                + "mName='"
-                + mName
-                + '\''
-                + ", mAge="
-                + mAge
-                + ", mGender='"
-                + mGender
-                + '\''
-                + ", mAddress='"
-                + mAddress
-                + '\''
-                + '}';
     }
 }

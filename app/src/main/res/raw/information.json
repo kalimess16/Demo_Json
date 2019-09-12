@@ -1,0 +1,10 @@
+{
+  "ID" : [111,112] ,
+  "Name" : ["Nguyen Viet Huy","Nguyen viet duy"],
+  "Age" : [23,16],
+  "Address" : {
+    "Street" : "44 Ha Bong",
+    "City" : "Da Nang"
+  },
+  "Gender" : "nam"
+}

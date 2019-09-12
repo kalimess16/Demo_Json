@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">JsonDemo</string>
+    <string name="example">Example</string>
 </resources>
